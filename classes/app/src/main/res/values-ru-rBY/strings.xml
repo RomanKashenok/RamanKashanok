@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back_button">ДАТЬ ЗАДНЮЮ</string>
+    <string name="success_action">КРАСАВЧИК ) ВСЕ РАБОТАЕТ</string>
+    <string name="show_image">КАРТИНКУ ПОКАЗАТЬ</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="login">ИМЯ ПОЛЬЗОВАТЕЛЯ</string>
+    <string name="password">ПАРОЛЬ</string>
+</resources>

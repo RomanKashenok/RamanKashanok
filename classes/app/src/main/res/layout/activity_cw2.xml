@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_xlarge">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/firstText"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="First text"
+                    android:textSize="@dimen/text_xxlarge"
+                    android:background="@color/background_color_text_fields"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center"/>
+
+            <TextView
+                    android:id="@+id/secondText"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textSize="@dimen/text_xxlarge"
+                    android:layout_marginTop="@dimen/dimen_xlarge"
+                    android:text="Second text"
+                    app:layout_constraintTop_toBottomOf="@id/firstText"
+                    android:background="@color/background_color_text_fields"
+                    android:gravity="center"/>
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_marginTop="200dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/background_color_constraint"
+                    app:layout_constraintTop_toBottomOf="@+id/secondText"
+                    android:layout_below="@+id/secondText"
+                    android:padding="@dimen/dimen_xlarge">
+
+
+                <TextView
+                        android:id="@+id/firstTextConstraint"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_layout_height"
+                        android:textSize="@dimen/text_xxlarge"
+                        android:text="First text"
+                        android:background="@color/background_color_text_fields"
+                        android:gravity="center"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                        android:id="@+id/secondTextConstraint"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_layout_height"
+                        android:textSize="@dimen/text_xxlarge"
+                        android:text="Second text"
+                        android:background="@color/background_color_text_fields"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dimen_xlarge"
+                        app:layout_constraintTop_toBottomOf="@+id/firstTextConstraint"/>
+
+                <ImageView
+                        android:layout_width="@dimen/dimen_layout_height"
+                        android:layout_height="@dimen/dimen_layout_height"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/secondTextConstraint"
+                        app:layout_constraintBottom_toTopOf="@+id/fourTextConstraint"
+                        android:src="@drawable/ic_launcher_foreground"/>
+
+                <TextView
+                        android:id="@+id/thirdTextConstraint"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_layout_height"
+                        android:textSize="@dimen/text_xxlarge"
+                        android:text="Third text"
+                        android:background="@color/background_color_text_fields"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dimen_xlarge"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                        android:id="@+id/fourTextConstraint"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_layout_height"
+                        android:textSize="@dimen/text_xxlarge"
+                        android:text="Four text"
+                        android:background="@color/background_color_text_fields"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/dimen_xlarge"
+                        app:layout_constraintBottom_toTopOf="@id/thirdTextConstraint"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_xxlarge"
+            android:text="Just button"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

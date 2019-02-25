@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LessonOne</string>
+    <string name="title_activity_replacing">ReplacingActivity</string>
+    <string name="text_1">FIRST</string>
+    <string name="text_2">SECOND</string>
+    <string name="change_button">CHANGE PLACES</string>
+</resources>

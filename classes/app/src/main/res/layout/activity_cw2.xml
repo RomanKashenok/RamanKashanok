@@ -22,7 +22,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:text="First text"
-                    android:textSize="@dimen/text_xxlarge"
+                    android:textSize="@dimen/text_size_20_sp"
                     android:background="@color/background_color_text_fields"
                     app:layout_constraintTop_toTopOf="parent"
                     android:gravity="center"/>
@@ -31,7 +31,7 @@
                     android:id="@+id/secondText"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
-                    android:textSize="@dimen/text_xxlarge"
+                    android:textSize="@dimen/text_size_20_sp"
                     android:layout_marginTop="@dimen/dimen_xlarge"
                     android:text="Second text"
                     app:layout_constraintTop_toBottomOf="@id/firstText"
@@ -51,8 +51,8 @@
                 <TextView
                         android:id="@+id/firstTextConstraint"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/dimen_layout_height"
-                        android:textSize="@dimen/text_xxlarge"
+                        android:layout_height="@dimen/dimen_27dp"
+                        android:textSize="@dimen/text_size_17_sp"
                         android:text="First text"
                         android:background="@color/background_color_text_fields"
                         android:gravity="center"
@@ -63,8 +63,8 @@
                 <TextView
                         android:id="@+id/secondTextConstraint"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/dimen_layout_height"
-                        android:textSize="@dimen/text_xxlarge"
+                        android:layout_height="@dimen/dimen_27dp"
+                        android:textSize="@dimen/text_size_17_sp"
                         android:text="Second text"
                         android:background="@color/background_color_text_fields"
                         android:gravity="center"
@@ -72,8 +72,8 @@
                         app:layout_constraintTop_toBottomOf="@+id/firstTextConstraint"/>
 
                 <ImageView
-                        android:layout_width="@dimen/dimen_layout_height"
-                        android:layout_height="@dimen/dimen_layout_height"
+                        android:layout_width="@dimen/dimen_44dp"
+                        android:layout_height="@dimen/dimen_44dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/secondTextConstraint"
@@ -83,8 +83,8 @@
                 <TextView
                         android:id="@+id/thirdTextConstraint"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/dimen_layout_height"
-                        android:textSize="@dimen/text_xxlarge"
+                        android:layout_height="@dimen/dimen_27dp"
+                        android:textSize="@dimen/text_size_17_sp"
                         android:text="Third text"
                         android:background="@color/background_color_text_fields"
                         android:gravity="center"
@@ -94,8 +94,8 @@
                 <TextView
                         android:id="@+id/fourTextConstraint"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/dimen_layout_height"
-                        android:textSize="@dimen/text_xxlarge"
+                        android:layout_height="@dimen/dimen_27dp"
+                        android:textSize="@dimen/text_size_17_sp"
                         android:text="Four text"
                         android:background="@color/background_color_text_fields"
                         android:gravity="center"
@@ -115,7 +115,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
-            android:textSize="@dimen/text_xxlarge"
+            android:textSize="@dimen/text_size_22_sp"
             android:text="Just button"
             android:textColor="#FFFFFF"
             android:layout_centerHorizontal="true"

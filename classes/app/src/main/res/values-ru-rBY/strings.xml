@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="first_homework">Создать View с тремя элементами (2 - TextView, 1 - Button). Повесить clickListener на каждый разным способом</string>
+    <string name="second_homework">Создать интерфейс в виде флагов нескольких государств. Т.е. создайте активити в которой по очереди нарисованы флаги следующих стран: Австрия, Польша, Италия, Колумбия, Мадагаскар, Таиланд и Дании</string>
+    <string name="third_homework">@string/under_construction</string>
+
+    <string name="first_homework_unavailable">К сожалению это задание было перемещено и более недоступно :( </string>
+    <string name="under_construction">К сожалению пока недоступно и будет реализовано в ближайшее время :( </string>
+
     <string name="back_button">ДАТЬ ЗАДНЮЮ</string>
     <string name="success_action">КРАСАВЧИК ) ВСЕ РАБОТАЕТ</string>
     <string name="show_image">КАРТИНКУ ПОКАЗАТЬ</string>
@@ -7,4 +15,16 @@
     <string name="sign_up">Регистрация</string>
     <string name="login">ИМЯ ПОЛЬЗОВАТЕЛЯ</string>
     <string name="password">ПАРОЛЬ</string>
+
+    <string name="first">Первое</string>
+    <string name="second">Второе</string>
+    <string name="third">Третье</string>
+    <string name="four">Четвертое</string>
+    <string name="five">Пятое</string>
+    <string name="six">Шестое</string>
+    <string name="seven">Седьмое</string>
+    <string name="eight">Восьмое</string>
+    <string name="nine">Девятое</string>
+    <string name="ten">Десятое</string>
+    <string name="eleven">Одиннадцатое</string>
 </resources>

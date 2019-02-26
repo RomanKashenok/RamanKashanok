@@ -11,15 +11,13 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".hw2.HomeWorksActivity">
+        <activity android:name=".classwork.cw2.ShowIconActivity">
         </activity>
-        <activity android:name=".cw2.ShowIconActivity">
+        <activity android:name=".classwork.cw2.ToGoToActivity">
         </activity>
-        <activity android:name=".cw2.ToGoToActivity">
+        <activity android:name=".classwork.cw2.Cw2Activity">
         </activity>
-        <activity android:name=".cw2.Cw2Activity">
-        </activity>
-        <activity android:name=".cw2.LoginActivity">
+        <activity android:name=".classwork.cw2.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

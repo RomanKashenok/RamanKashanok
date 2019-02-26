@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name" translatable="false">classes</string>
+    <string name="loren_ipsum" translatable="false">Lorem ipsum dolor sit amet, suspendisse in sociis mi mi sit mauris,
+        purus ultrices lorem non gravida, risus faucibus praesent id turpis malesuada euismod. Eget ad sed non blandit
+        aliquam convallis.
+    </string>
+
+    <string name="first_homework">Implement click listeners with 3 approaches to change text fields colors and text content</string>
+    <string name="second_homework">Create activity with flags. Flags should be drawn with layouts but not pictures. Flags should be relative one to each other</string>
+    <string name="third_homework">@string/under_construction</string>
+
+
+    <string name="first_homework_unavailable">Unfortunately this homework was moved to different source :( </string>
+    <string name="under_construction">Unfortunately this is under construction :( </string>
+
     <string name="back_button">GET BACK</string>
     <string name="success_action">SUCCESS</string>
     <string name="show_image">SHOW IMAGE</string>
@@ -7,4 +20,16 @@
     <string name="sign_up">Sign Up</string>
     <string name="login">LOGIN</string>
     <string name="password">PASSWORD</string>
+
+    <string name="first">First</string>
+    <string name="second">First</string>
+    <string name="third">First</string>
+    <string name="four">First</string>
+    <string name="five">First</string>
+    <string name="six">First</string>
+    <string name="seven">First</string>
+    <string name="eight">First</string>
+    <string name="nine">First</string>
+    <string name="ten">First</string>
+    <string name="eleven">First</string>
 </resources>

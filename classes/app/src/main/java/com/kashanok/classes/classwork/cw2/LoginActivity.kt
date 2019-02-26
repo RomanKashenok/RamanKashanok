@@ -1,4 +1,4 @@
-package com.kashanok.classes.cw2
+package com.kashanok.classes.classwork.cw2
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -12,6 +12,9 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         signIn.setOnClickListener {
+        }
+
+        signUp.setOnClickListener {
             startActivity(Cw2Activity.getIntent(this))
         }
     }

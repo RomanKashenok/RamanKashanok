@@ -22,14 +22,14 @@
     <string name="password">PASSWORD</string>
 
     <string name="first">First</string>
-    <string name="second">First</string>
-    <string name="third">First</string>
-    <string name="four">First</string>
-    <string name="five">First</string>
-    <string name="six">First</string>
-    <string name="seven">First</string>
-    <string name="eight">First</string>
-    <string name="nine">First</string>
-    <string name="ten">First</string>
-    <string name="eleven">First</string>
+    <string name="second">Second</string>
+    <string name="third">Third</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
+    <string name="six">Six</string>
+    <string name="seven">Seven</string>
+    <string name="eight">Eight</string>
+    <string name="nine">Nine</string>
+    <string name="ten">Ten</string>
+    <string name="eleven">Eleven</string>
 </resources>

@@ -13,6 +13,7 @@ import com.kashanok.classes.common.ItemOffsetDecoration
 import com.kashanok.classes.homework.common.workitem.HomeWorkNumber
 import com.kashanok.classes.homework.common.workitem.HomeworkListItem
 import com.kashanok.classes.homework.common.workitem.WorkNumber
+import com.kashanok.classes.homework.hw1.ReplacingActivity
 import com.kashanok.classes.homework.hw2.FlagsActivity
 import kotlinx.android.synthetic.main.activity_home_works.*
 
@@ -67,8 +68,7 @@ class HomeWorkStartScreenActivity : AppCompatActivity() {
                 val work: HomeWorkNumber = HomeWorkNumber.fromOrdinal(position)
                 when (work) {
                     HomeWorkNumber.FIRST -> {
-                        val toast = Toast.makeText(context, getString(R.string.first_homework_unavailable), Toast.LENGTH_LONG)
-                        toast.show()
+                        startActivity(ReplacingActivity.getIntent(context))
                     }
                     HomeWorkNumber.SECOND -> {
                         startActivity(FlagsActivity.getIntent(context))

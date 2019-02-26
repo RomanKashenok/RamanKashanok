@@ -11,6 +11,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".homework.hw1.ReplacingActivity">
+        </activity>
         <activity android:name=".homework.hw2.FlagsActivity">
         </activity>
         <activity android:name=".homework.common.HomeWorkStartScreenActivity">

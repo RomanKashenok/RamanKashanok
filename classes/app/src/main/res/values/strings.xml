@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">classes</string>
+    <string name="text_1" translatable="false">FIRST</string>
+    <string name="text_2" translatable="false">SECOND</string>
+    <string name="change_button" translatable="false">CHANGE PLACES</string>
     <string name="loren_ipsum" translatable="false">Lorem ipsum dolor sit amet, suspendisse in sociis mi mi sit mauris,
         purus ultrices lorem non gravida, risus faucibus praesent id turpis malesuada euismod. Eget ad sed non blandit
         aliquam convallis.

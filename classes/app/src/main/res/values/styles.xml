@@ -9,6 +9,10 @@
         <item name="android:windowBackground">@color/app_background</item>
     </style>
 
+    <style name="LoginBackground" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/login_bg</item>
+    </style>
+
     <style name="HomeworkTitleText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -30,7 +34,7 @@
 
     <style name="LoginScreenButton">
         <item name="android:layout_width">300dp</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimen_52dp</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:backgroundTint">@color/signInButton</item>
         <item name="android:layout_marginTop">@dimen/dimen_large</item>
@@ -40,7 +44,7 @@
     </style>
 
     <style name="LoginScreenEditText">
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimen_52dp</item>
         <item name="android:textColor">@color/textPrimaryColor</item>
         <item name="android:textColorHint">@color/textPrimaryColor</item>
         <item name="android:layout_width">300dp</item>

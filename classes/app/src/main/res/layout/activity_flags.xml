@@ -45,7 +45,6 @@
                         android:layout_weight="1"
                         android:background="#FF0000"/>
 
-
             </LinearLayout>
 
             <RelativeLayout
@@ -63,7 +62,6 @@
                         android:layout_height="75dp"
                         android:background="#FF0000"
                         android:layout_alignParentBottom="true"/>
-
 
             </RelativeLayout>
 
@@ -98,7 +96,6 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         android:orientation="horizontal"
                         android:background="#FF0000"/>
-
 
             </android.support.constraint.ConstraintLayout>
 
@@ -158,7 +155,6 @@
                     </LinearLayout>
 
                 </android.support.constraint.ConstraintLayout>
-
 
             </RelativeLayout>
 

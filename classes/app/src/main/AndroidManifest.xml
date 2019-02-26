@@ -11,6 +11,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".classwork.cw3.Cw3Activity">
+        </activity>
         <activity android:name=".classwork.cw2.ShowIconActivity">
         </activity>
         <activity android:name=".classwork.cw2.ToGoToActivity">

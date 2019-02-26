@@ -1,4 +1,4 @@
-package com.kashanok.classes.cw2
+package com.kashanok.classes.classwork.cw2
 
 import android.content.Context
 import android.content.Intent

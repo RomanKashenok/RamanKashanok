@@ -1,4 +1,4 @@
-package com.kashanok.classes.cw2
+package com.kashanok.classes.classwork.cw2
 
 import android.content.Context
 import android.content.Intent
@@ -20,7 +20,12 @@ class Cw2Activity : AppCompatActivity() {
         setContentView(R.layout.activity_cw2)
 
         button.setOnClickListener {
-            startActivity(ToGoToActivity.getIntent(this, getString(R.string.back_button)))
+            startActivity(
+                ToGoToActivity.getIntent(
+                    this,
+                    getString(R.string.back_button)
+                )
+            )
         }
 
     }

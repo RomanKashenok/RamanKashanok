@@ -7,4 +7,5 @@
     <color name="background_color_main">#C2FFE0</color>
     <color name="background_color_text_fields">#D3D3D3</color>
     <color name="background_color_constraint">#CDFADA</color>
+    <color name="homework_title_text_color">#00225C</color>
 </resources>

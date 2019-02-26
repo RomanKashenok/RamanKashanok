@@ -15,6 +15,8 @@
     <string name="sign_up">Регистрация</string>
     <string name="login">ИМЯ ПОЛЬЗОВАТЕЛЯ</string>
     <string name="password">ПАРОЛЬ</string>
+    <string name="forgot_password"><u>Забыли логин/пароль?</u></string>
+
 
     <string name="first">Первое</string>
     <string name="second">Второе</string>

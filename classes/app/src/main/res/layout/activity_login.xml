@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/background_main">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        tools:background="@drawable/login_bg">
 
     <ScrollView
             android:layout_height="match_parent"
@@ -12,7 +13,8 @@
             android:id="@+id/scrollContainer"
             android:layout_width="match_parent">
 
-        <LinearLayout
+
+        <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -20,53 +22,65 @@
 
             <ImageView
                     android:id="@+id/caajooTitleLogo"
+                    android:layout_marginTop="@dimen/dimen_xxxxlarge"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:src="@drawable/icon_test"
-                    android:tint="#7D8DF7"
-                    android:paddingTop="@dimen/dimen_xlarge"
-                    android:paddingBottom="@dimen/dimen_xlarge"/>
+                    android:src="@drawable/login_logo"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <EditText
                     android:id="@+id/login"
-                    android:layout_height="wrap_content"
-                    android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF"
-                    android:layout_width="200dp"
-                    tools:text="@string/login"
+                    style="@style/LoginScreenEditText"
+                    android:drawableStart="@drawable/ic_login_name"
                     android:hint="@string/login"
-                    android:inputType="text"
-                    android:imeOptions="actionGo"/>
+                    android:layout_marginTop="@dimen/dimen_xxxlarge"
+                    app:layout_constraintTop_toBottomOf="@id/caajooTitleLogo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
 
             <EditText
                     android:id="@+id/password"
-                    android:layout_height="wrap_content"
-                    android:layout_width="200dp"
-                    android:textColor="#FFFFFF"
-                    android:textColorHint="#FFFFFF"
-                    tools:text="@string/password"
+                    style="@style/LoginScreenEditText"
+                    android:drawableStart="@drawable/ic_login_name"
                     android:hint="@string/password"
                     android:inputType="textPassword"
-                    android:imeOptions="actionGo"/>
+                    android:layout_marginTop="@dimen/dimen_xlarge"
+                    app:layout_constraintTop_toBottomOf="@id/login"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
 
             <Button
                     android:id="@+id/signIn"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/dimen_xlarge"
-                    android:text="@string/sign_in"/>
+                    android:text="@string/sign_in"
+                    style="@style/LoginScreenButton"
+                    app:layout_constraintTop_toBottomOf="@id/password"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                    android:id="@+id/forgotPassword"
+                    style="@style/LoginScreenForgotPassword"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/signIn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="@string/forgot_password"
+                    android:layout_marginBottom="@dimen/dimen_large"/>
 
             <Button
                     android:id="@+id/signUp"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/dimen_xlarge"
-                    android:text="@string/sign_up"/>
+                    android:backgroundTint="@color/signUpButton"
+                    android:text="@string/sign_up"
+                    style="@style/LoginScreenButton"
+                    android:layout_marginBottom="@dimen/dimen_large"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/forgotPassword"
+                    app:layout_goneMarginBottom="@dimen/dimen_9dp"
+                    app:layout_constraintVertical_bias="1"/>
 
-        </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
 
     </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>

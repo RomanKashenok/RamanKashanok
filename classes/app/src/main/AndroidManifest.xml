@@ -17,13 +17,15 @@
         </activity>
         <activity android:name=".homework.common.HomeWorkStartScreenActivity">
         </activity>
+        <activity android:name=".classwork.cw3.Cw3Activity">
+        </activity>
         <activity android:name=".classwork.cw2.ShowIconActivity">
         </activity>
         <activity android:name=".classwork.cw2.ToGoToActivity">
         </activity>
         <activity android:name=".classwork.cw2.Cw2Activity">
         </activity>
-        <activity android:name=".classwork.cw2.LoginActivity">
+        <activity android:name=".classwork.cw2.LoginActivity" android:theme="@style/LoginBackground">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

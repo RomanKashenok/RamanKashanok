@@ -8,13 +8,13 @@
         aliquam convallis.
     </string>
 
-    <string name="first_homework">Implement click listeners with 3 approaches to change text fields colors and text content</string>
-    <string name="second_homework">Create activity with flags. Flags should be drawn with layouts but not pictures. Flags should be relative one to each other</string>
+    <string name="first_homework">Implement click listeners with 3 approaches to change text fields colors and text content.</string>
+    <string name="second_homework">Create activity with flags. Flags should be drawn with layouts but not pictures. Flags should be relative one to each other.</string>
     <string name="third_homework">@string/under_construction</string>
 
 
-    <string name="first_homework_unavailable">Unfortunately this homework was moved to different source :( </string>
-    <string name="under_construction">Unfortunately this is under construction :( </string>
+    <string name="first_homework_unavailable">Unfortunately this homework was moved to different source :(</string>
+    <string name="under_construction">Unfortunately this is under construction :(</string>
 
     <string name="back_button">GET BACK</string>
     <string name="success_action">SUCCESS</string>
@@ -23,6 +23,7 @@
     <string name="sign_up">Sign Up</string>
     <string name="login">LOGIN</string>
     <string name="password">PASSWORD</string>
+    <string name="forgot_password"><u>Forgot your username/password?</u></string>
 
     <string name="first">First</string>
     <string name="second">Second</string>

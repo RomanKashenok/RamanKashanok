@@ -23,7 +23,7 @@
                     android:layout_height="80dp"
                     android:text="First text"
                     android:textSize="@dimen/text_size_20_sp"
-                    android:background="@color/background_color_text_fields"
+                    android:background="@color/backgroundColorTextFields"
                     app:layout_constraintTop_toTopOf="parent"
                     android:gravity="center"/>
 
@@ -35,14 +35,14 @@
                     android:layout_marginTop="@dimen/dimen_xlarge"
                     android:text="Second text"
                     app:layout_constraintTop_toBottomOf="@id/firstText"
-                    android:background="@color/background_color_text_fields"
+                    android:background="@color/backgroundColorTextFields"
                     android:gravity="center"/>
 
             <android.support.constraint.ConstraintLayout
                     android:layout_marginTop="200dp"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:background="@color/background_color_constraint"
+                    android:background="@color/backgroundColorConstraint"
                     app:layout_constraintTop_toBottomOf="@+id/secondText"
                     android:layout_below="@+id/secondText"
                     android:padding="@dimen/dimen_xlarge">
@@ -53,7 +53,7 @@
                         android:layout_height="@dimen/dimen_27dp"
                         android:textSize="@dimen/text_size_17_sp"
                         android:text="First text"
-                        android:background="@color/background_color_text_fields"
+                        android:background="@color/backgroundColorTextFields"
                         android:gravity="center"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +65,7 @@
                         android:layout_height="@dimen/dimen_27dp"
                         android:textSize="@dimen/text_size_17_sp"
                         android:text="Second text"
-                        android:background="@color/background_color_text_fields"
+                        android:background="@color/backgroundColorTextFields"
                         android:gravity="center"
                         android:layout_marginTop="@dimen/dimen_xlarge"
                         app:layout_constraintTop_toBottomOf="@+id/firstTextConstraint"/>
@@ -85,7 +85,7 @@
                         android:layout_height="@dimen/dimen_27dp"
                         android:textSize="@dimen/text_size_17_sp"
                         android:text="Third text"
-                        android:background="@color/background_color_text_fields"
+                        android:background="@color/backgroundColorTextFields"
                         android:gravity="center"
                         android:layout_marginTop="@dimen/dimen_xlarge"
                         app:layout_constraintBottom_toBottomOf="parent"/>
@@ -96,7 +96,7 @@
                         android:layout_height="@dimen/dimen_27dp"
                         android:textSize="@dimen/text_size_17_sp"
                         android:text="Four text"
-                        android:background="@color/background_color_text_fields"
+                        android:background="@color/backgroundColorTextFields"
                         android:gravity="center"
                         android:layout_marginBottom="@dimen/dimen_xlarge"
                         app:layout_constraintBottom_toTopOf="@id/thirdTextConstraint"/>

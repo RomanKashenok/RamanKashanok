@@ -11,6 +11,12 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".homework.hw1.ReplacingActivity">
+        </activity>
+        <activity android:name=".homework.hw2.FlagsActivity">
+        </activity>
+        <activity android:name=".homework.common.HomeWorkStartScreenActivity">
+        </activity>
         <activity android:name=".classwork.cw3.Cw3Activity">
         </activity>
         <activity android:name=".classwork.cw2.ShowIconActivity">

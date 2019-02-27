@@ -16,7 +16,6 @@
             android:textColor="#FF0000"
         android:text="SECOND ACTIVITY"/>
 
-
     <Button
             android:id="@+id/backButton"
             android:layout_width="100dp"

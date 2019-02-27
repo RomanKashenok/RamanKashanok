@@ -47,7 +47,6 @@
                     android:layout_below="@+id/secondText"
                     android:padding="@dimen/dimen_xlarge">
 
-
                 <TextView
                         android:id="@+id/firstTextConstraint"
                         android:layout_width="match_parent"
@@ -106,7 +105,6 @@
 
 
         </android.support.constraint.ConstraintLayout>
-
 
     </ScrollView>
 

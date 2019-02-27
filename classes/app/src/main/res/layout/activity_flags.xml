@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+            <LinearLayout
+                    android:id="@+id/austria"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="@dimen/dimen_9dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_weight="3"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#FF0000"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#FF0000"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:id="@+id/poland"
+                    android:layout_marginTop="@dimen/dimen_9dp"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintTop_toBottomOf="@id/austria"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="#FFFFFF">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:background="#FF0000"
+                        android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/italy"
+                    android:layout_marginTop="@dimen/dimen_9dp"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintTop_toBottomOf="@+id/poland"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                        android:id="@+id/italyGreen"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="#4CB604"
+                        android:orientation="horizontal"/>
+                <LinearLayout
+                        android:id="@+id/italyWhite"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toEndOf="@id/italyGreen"
+                        android:orientation="horizontal"
+                        android:background="#FFFFFF"/>
+
+                <LinearLayout
+                        android:id="@+id/italyRed"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:orientation="horizontal"
+                        android:background="#FF0000"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                    android:id="@+id/columbia"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_weight="4"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_marginTop="@dimen/dimen_9dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:background="#FFD524"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#003EB9"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#C70000"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:id="@+id/madagaskar"
+                    android:layout_marginTop="@dimen/dimen_9dp"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintTop_toBottomOf="@id/austria"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="#FFFFFF">
+
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="#388800"
+                        android:layout_alignParentEnd="true">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:background="#E70013"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                    </LinearLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:id="@+id/thailand"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="@dimen/dimen_9dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_weight="6"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#AA0000"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:background="#003EB9"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#AA0000"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:id="@+id/denmark"
+                    android:layout_marginTop="@dimen/dimen_9dp"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:background="#FFFFFF">
+
+                <LinearLayout
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="#FF0000"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"/>
+                <LinearLayout
+                        android:layout_width="210dp"
+                        android:layout_height="65dp"
+                        android:background="#FF0000"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"/>
+                <LinearLayout
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="#FF0000"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"/>
+
+                <LinearLayout
+                        android:layout_width="210dp"
+                        android:layout_height="65dp"
+                        android:background="#FF0000"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

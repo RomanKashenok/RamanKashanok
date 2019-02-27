@@ -30,7 +30,7 @@ class ItemOffsetDecoration(
         val itemCount = state.itemCount
         val itemPosition = parent.getChildAdapterPosition(view)
         with(outRect) {
-            top = if (parent.getChildAdapterPosition(view) == 0) firstTopOffset else topOffset
+            top = if (itemPosition == 0) firstTopOffset else topOffset
             left = startOffset
             right = endOffset
             bottom = if (itemCount > 0 && itemPosition == itemCount - 1) lastBottomOffset else bottomOffset

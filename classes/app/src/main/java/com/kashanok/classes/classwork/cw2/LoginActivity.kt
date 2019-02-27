@@ -12,11 +12,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        signIn.setOnClickListener {
+        signInButton.setOnClickListener {
             startActivity(HomeWorkStartScreenActivity.getIntent(this))
         }
 
-        signUp.setOnClickListener {
+        signUpButton.setOnClickListener {
             startActivity(Cw2Activity.getIntent(this))
         }
     }

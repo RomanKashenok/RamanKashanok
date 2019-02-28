@@ -13,4 +13,5 @@
     <color name="signUpButton">#F1D196</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorGray">#818181</color>
 </resources>

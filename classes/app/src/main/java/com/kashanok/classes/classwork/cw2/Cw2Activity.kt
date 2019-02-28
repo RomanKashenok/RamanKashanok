@@ -23,7 +23,7 @@ class Cw2Activity : AppCompatActivity() {
             startActivity(
                 ToGoToActivity.getIntent(
                     this,
-                    getString(R.string.back_button)
+                    getString(R.string.button_back_button)
                 )
             )
         }

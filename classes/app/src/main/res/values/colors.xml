@@ -11,5 +11,6 @@
     <color name="homeworkTitleTextColor">#00225C</color>
     <color name="signInButton">#33BFF8</color>
     <color name="signUpButton">#F1D196</color>
-    <color name="textPrimaryColor">#FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
 </resources>

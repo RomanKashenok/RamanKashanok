@@ -8,11 +8,13 @@
     <string name="first_homework_unavailable">К сожалению это задание было перемещено и более недоступно :( </string>
     <string name="under_construction">К сожалению пока недоступно и будет реализовано в ближайшее время :( </string>
 
-    <string name="back_button">ДАТЬ ЗАДНЮЮ</string>
+    <string name="button_back_button">ДАТЬ ЗАДНЮЮ</string>
+    <string name="button_show_image">КАРТИНКУ ПОКАЗАТЬ</string>
+    <string name="button_sign_in">Войти</string>
+    <string name="button_sign_up">Регистрация</string>
+    <string name="button_upload">ЗАГРУЗИТЬ</string>
+
     <string name="success_action">КРАСАВЧИК ) ВСЕ РАБОТАЕТ</string>
-    <string name="show_image">КАРТИНКУ ПОКАЗАТЬ</string>
-    <string name="sign_in">Войти</string>
-    <string name="sign_up">Регистрация</string>
     <string name="login">ИМЯ ПОЛЬЗОВАТЕЛЯ</string>
     <string name="password">ПАРОЛЬ</string>
     <string name="forgot_password"><u>Забыли логин/пароль?</u></string>

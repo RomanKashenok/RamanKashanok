@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="@string/back_button"
+            android:text="@string/button_back_button"
             android:layout_marginBottom="100dp"
             app:layout_constraintStart_toStartOf="parent"/>
 
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="@string/show_image"
+            android:text="@string/button_show_image"
             android:layout_marginBottom="50dp"
             app:layout_constraintStart_toStartOf="parent"/>
 

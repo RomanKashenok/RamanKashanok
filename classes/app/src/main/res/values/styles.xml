@@ -27,7 +27,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/dimen_large</item>
         <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/textPrimaryColor</item>
+        <item name="android:textColor">@color/colorWhite</item>
         <item name="android:lineSpacingExtra">@dimen/text_size_4_sp</item>
         <item name="android:fontFamily">@font/monda_regular</item>
     </style>
@@ -38,18 +38,24 @@
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:backgroundTint">@color/signInButton</item>
         <item name="android:layout_marginTop">@dimen/dimen_large</item>
-        <item name="android:textColor">@color/textPrimaryColor</item>
+        <item name="android:textColor">@color/colorWhite</item>
         <item name="android:fontFamily">@font/monda_bold</item>
         <item name="android:textSize">@dimen/text_size_20_sp</item>
     </style>
 
     <style name="LoginScreenEditText">
         <item name="android:layout_height">@dimen/dimen_52dp</item>
-        <item name="android:textColor">@color/textPrimaryColor</item>
-        <item name="android:textColorHint">@color/textPrimaryColor</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
         <item name="android:layout_width">300dp</item>
         <item name="android:inputType">text</item>
         <item name="android:background">@color/colorPrimaryTransparent</item>
+    </style>
+
+    <style name="EditTextField" parent="LoginScreenEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
     </style>
 
 </resources>

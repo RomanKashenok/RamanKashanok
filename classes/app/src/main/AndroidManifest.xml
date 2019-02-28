@@ -11,6 +11,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".homework.hw3.LoadPictureActivity">
+        </activity>
         <activity android:name=".homework.hw1.ReplacingActivity">
         </activity>
         <activity android:name=".homework.hw2.FlagsActivity">
@@ -25,7 +27,9 @@
         </activity>
         <activity android:name=".classwork.cw2.Cw2Activity">
         </activity>
-        <activity android:name=".classwork.cw2.LoginActivity" android:theme="@style/LoginBackground">
+        <activity
+                android:name=".classwork.cw2.LoginActivity"
+                android:theme="@style/LoginBackground">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

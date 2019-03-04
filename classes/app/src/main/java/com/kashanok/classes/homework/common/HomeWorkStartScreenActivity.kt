@@ -65,4 +65,9 @@ class HomeWorkStartScreenActivity : AppCompatActivity() {
         cw3Button.setOnClickListener { startActivity(Cw3Activity.getIntent(this)) }
         cw4Button.setOnClickListener { startActivity(Cw4Activity.getIntent(this)) }
     }
+
+    override fun finish() {
+        super.finish()
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+    }
 }

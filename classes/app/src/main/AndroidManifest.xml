@@ -13,6 +13,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".homework.hw4.Hw4Activity">
+        </activity>
         <activity android:name=".classwork.cw4.Cw4Activity">
         </activity>
         <activity android:name=".homework.hw3.LoadPictureActivity">

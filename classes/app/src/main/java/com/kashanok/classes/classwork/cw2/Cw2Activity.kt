@@ -27,6 +27,5 @@ class Cw2Activity : AppCompatActivity() {
                 )
             )
         }
-
     }
 }

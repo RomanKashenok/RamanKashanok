@@ -20,7 +20,6 @@ import com.kashanok.classes.homework.common.Constants
 import kotlinx.android.synthetic.main.activity_hw3.*
 import org.apache.commons.validator.routines.UrlValidator
 
-
 class LoadPictureActivity : AppCompatActivity() {
 
     companion object {
@@ -125,10 +124,9 @@ class LoadPictureActivity : AppCompatActivity() {
         toast.show()
     }
 
-    private fun onInvalidUrlAction(){
+    private fun onInvalidUrlAction() {
         showInvalidUrlToast()
         setNoPictureImage()
         toggleVisibilityOnLoad()
     }
-
 }

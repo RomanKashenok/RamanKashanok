@@ -9,7 +9,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 
-class MyView: View {
+class MyView : View {
 
     constructor(context: Context): super(context)
 
@@ -20,27 +20,25 @@ class MyView: View {
     private var pointX: Float = 0f
     private var pointY: Float = 0f
 
-
-
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
         drawThreeSquares(canvas)
         drawArch(canvas)
-        canvas?.drawCircle(pointX,pointY, 80f, paint)
+        canvas?.drawCircle(pointX, pointY, 80f, paint)
     }
 
     private fun drawThreeSquares(canvas: Canvas?) {
         paint.color = Color.BLUE
-        val squareSide  = width / 4
+        val squareSide = width / 4
         val distanceBetween = squareSide / 4
         var fromLeft = distanceBetween
-        for (i in 1..3){
+        for (i in 1..3) {
             drawSquare(canvas, squareSide.toFloat(), fromLeft.toFloat(), distanceBetween.toFloat())
             fromLeft += (distanceBetween + squareSide)
         }
     }
 
-    private fun drawSquare(canvas: Canvas?, squareSide: Float, left: Float, top: Float){
+    private fun drawSquare(canvas: Canvas?, squareSide: Float, left: Float, top: Float) {
         val rectF = RectF(left, top, left + squareSide, top + squareSide)
         canvas?.drawRect(rectF, paint)
     }
@@ -57,12 +55,11 @@ class MyView: View {
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
 
-        if(event?.action == MotionEvent.ACTION_MOVE){
+        if (event?.action == MotionEvent.ACTION_MOVE) {
             pointX = event.x
             pointY = event.y
             invalidate()
         }
         return true
     }
-
 }

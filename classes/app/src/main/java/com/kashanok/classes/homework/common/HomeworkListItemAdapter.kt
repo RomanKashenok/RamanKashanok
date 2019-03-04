@@ -9,10 +9,10 @@ import com.kashanok.classes.common.BaseAdapterItem
 import com.kashanok.classes.common.BaseItemClickListener
 import com.kashanok.classes.homework.common.workitem.WorkNumber
 
-class HomeworkListItemAdapter (
+class HomeworkListItemAdapter(
     private val itemClickListener: BaseItemClickListener<BaseAdapterItem<WorkNumber>>,
     private val context: Context
-) : RecyclerView.Adapter<HomeworkItemViewHolder>(){
+) : RecyclerView.Adapter<HomeworkItemViewHolder>() {
 
     companion object {
         const val HOMEWORK_ITEM = 0
@@ -33,7 +33,7 @@ class HomeworkListItemAdapter (
         holder.description.text = context.getString(items[position].model.descId)
         holder.picture.setImageResource(items[position].model.imageResourceId)
 
-        holder.workArea.setOnClickListener{
+        holder.workArea.setOnClickListener {
             itemClickListener.onItemClicked(items[position], position)
         }
     }

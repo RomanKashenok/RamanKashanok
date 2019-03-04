@@ -9,7 +9,7 @@ import com.kashanok.classes.R
 import com.kashanok.classes.homework.hw1.listeners.AnyViewClickListener
 import kotlinx.android.synthetic.main.activity_hw1.*
 
-class ReplacingActivity: Activity(), View.OnClickListener {
+class ReplacingActivity : Activity(), View.OnClickListener {
 
     companion object {
         fun getIntent(context: Context): Intent {
@@ -24,22 +24,21 @@ class ReplacingActivity: Activity(), View.OnClickListener {
         setContentView(R.layout.activity_hw1)
         clickListener = AnyViewClickListener(leftText, rightText)
 
-        //First approach
+        // First approach
         setAllItemsClickListener(leftText, rightText, changeButton)
 
-//        //Second approach
+//        // Second approach
 //        leftText.setOnClickListener { changeColorsAndText() }
 //        rightText.setOnClickListener { changeColorsAndText() }
 //        changeButton.setOnClickListener { changeColorsAndText() }
 
-        //Third approach
+        // Third approach
 //        leftText.setOnClickListener(this)
 //        rightText.setOnClickListener(this)
 //        changeButton.setOnClickListener(this)
-
     }
 
-    //First approach
+    // First approach
     private fun setAllItemsClickListener(vararg view: View) {
         if (view.size == 3) {
             view.forEach { it -> it.setOnClickListener(clickListener)
@@ -47,12 +46,12 @@ class ReplacingActivity: Activity(), View.OnClickListener {
         }
     }
 
-    //Second approach
+    // Second approach
     private fun changeColorsAndText() {
         changeAction()
     }
 
-    //Third approach
+    // Third approach
     override fun onClick(view: View?) {
         changeAction()
     }
@@ -65,6 +64,4 @@ class ReplacingActivity: Activity(), View.OnClickListener {
         rightText.background = background
         rightText.text = text
     }
-
-
 }

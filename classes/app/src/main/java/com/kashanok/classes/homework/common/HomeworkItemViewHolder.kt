@@ -10,5 +10,4 @@ class HomeworkItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     val description = view.description
     val picture = view.hwIcon
     val workArea = view.workArea
-
 }

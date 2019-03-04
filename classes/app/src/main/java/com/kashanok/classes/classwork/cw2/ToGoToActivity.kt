@@ -31,7 +31,7 @@ class ToGoToActivity : AppCompatActivity() {
 
         backButton.text = buttonText
 
-        backButton.setOnClickListener{
+        backButton.setOnClickListener {
             this.finish()
         }
 

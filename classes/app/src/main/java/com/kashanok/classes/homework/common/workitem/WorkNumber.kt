@@ -6,7 +6,8 @@ import java.io.Serializable
 data class WorkNumber(
     val titleId: Int,
     val descId: Int,
-    val imageResourceId: Int) : Serializable
+    val imageResourceId: Int
+) : Serializable
 
 enum class HomeWorkNumber(val title: Int, val desc: Int, val image: Int) {
     FIRST(R.string.first, R.string.first_homework, R.drawable.icon_test),

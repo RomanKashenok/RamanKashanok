@@ -7,7 +7,10 @@
         android:layout_height="match_parent"
         tools:context=".homework.common.HomeWorkStartScreenActivity">
 
-    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
                 android:layout_width="match_parent"
@@ -22,5 +25,73 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <HorizontalScrollView
+            android:id="@+id/classworkView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_52dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_3dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                    android:id="@+id/cw1Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CW1"
+                    android:background="@drawable/button_background_ripple"/>
+            <Button
+                    android:id="@+id/cw2Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CW2"
+                    android:background="@drawable/button_background_ripple"/>
+            <Button
+                    android:id="@+id/cw3Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CW3"
+                    android:background="@drawable/button_background_ripple"/>
+            <Button
+                    android:id="@+id/cw4Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CW4"
+                    android:background="@drawable/button_background_ripple"/>
+            <Button
+                    android:id="@+id/cw5Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CW5"
+                    android:background="@drawable/button_background_ripple"/>
+            <Button
+                    android:id="@+id/cw6Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CW6"
+                    android:background="@drawable/button_background_ripple"/>
+            <Button
+                    android:id="@+id/cw7Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CW7"
+                    android:background="@drawable/button_background_ripple"/>
+            <Button
+                    android:id="@+id/cw8Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CW8"
+                    android:background="@drawable/button_background_ripple"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
 </android.support.constraint.ConstraintLayout>

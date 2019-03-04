@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="@color/colorPrimaryDark">
+    <item android:id="@android:id/mask"
+          android:left="@dimen/dimen_xxxsmall"
+          android:top="@dimen/dimen_xxxsmall"
+          android:right="@dimen/dimen_xxxsmall"
+          android:bottom="@dimen/dimen_xxxsmall">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorPrimaryDark"/>
+            <corners android:radius="@dimen/dimen_7dp"/>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/background"
+          android:left="@dimen/dimen_xxxsmall"
+          android:top="@dimen/dimen_xxxsmall"
+          android:right="@dimen/dimen_xxxsmall"
+          android:bottom="@dimen/dimen_xxxsmall">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorGrayLight"/>
+            <corners android:radius="@dimen/dimen_7dp"/>
+        </shape>
+    </item>
+</ripple>

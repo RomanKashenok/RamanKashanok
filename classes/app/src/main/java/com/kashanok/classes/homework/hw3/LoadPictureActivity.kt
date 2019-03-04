@@ -17,7 +17,7 @@ import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.kashanok.classes.R
 import com.kashanok.classes.homework.common.Constants
-import kotlinx.android.synthetic.main.activity_load_picture.*
+import kotlinx.android.synthetic.main.activity_hw3.*
 import org.apache.commons.validator.routines.UrlValidator
 
 
@@ -33,7 +33,7 @@ class LoadPictureActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(com.kashanok.classes.R.layout.activity_load_picture)
+        setContentView(com.kashanok.classes.R.layout.activity_hw3)
 
         defaultImageTextView.setOnClickListener {
             randomPicture = true
@@ -75,6 +75,7 @@ class LoadPictureActivity : AppCompatActivity() {
         target?.let { it ->
             Glide.with(this)
                 .load(imageUri)
+                .circleCrop()
                 .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .skipMemoryCache(true)
                 .listener(object : RequestListener<Drawable> {

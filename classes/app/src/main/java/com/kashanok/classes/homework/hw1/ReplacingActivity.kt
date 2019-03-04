@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.view.View
 import com.kashanok.classes.R
 import com.kashanok.classes.homework.hw1.listeners.AnyViewClickListener
-import kotlinx.android.synthetic.main.title_activity_replacing.*
+import kotlinx.android.synthetic.main.activity_hw1.*
 
 class ReplacingActivity: Activity(), View.OnClickListener {
 
@@ -21,7 +21,7 @@ class ReplacingActivity: Activity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.title_activity_replacing)
+        setContentView(R.layout.activity_hw1)
         clickListener = AnyViewClickListener(leftText, rightText)
 
         //First approach

@@ -10,9 +10,18 @@
     <string name="enter_uri" translatable="false">http://example.com/img.jpg</string>
 
 
-    <string name="first_homework">Implement click listeners with 3 approaches to change text fields colors and text content.</string>
-    <string name="second_homework">Create activity with flags. Flags should be drawn with layouts but not pictures. Flags should be relative one to each other.</string>
-    <string name="third_homework">Show remote image task. Progress bar should appear while picture wile picture preparing.</string>
+    <string name="first_homework">Implement click listeners with 3 approaches to change text fields colors and text
+        content.
+    </string>
+    <string name="second_homework">Create activity with flags. Flags should be drawn with layouts but not pictures.
+        Flags should be relative one to each other.
+    </string>
+    <string name="third_homework">Show remote image task. Progress bar should appear while picture wile picture
+        preparing.
+    </string>
+    <string name="four_homework">1. Create animation between activities 2. Make owl to blink (animation) 3. Draw watches
+        with correct time
+    </string>
 
     <string name="first_homework_unavailable">Unfortunately this homework was moved to different source :(</string>
     <string name="under_construction">Unfortunately this is under construction :(</string>
@@ -25,12 +34,16 @@
     <string name="button_sign_in">Sign In</string>
     <string name="button_sign_up">Sign Up</string>
     <string name="button_upload">UPLOAD</string>
-    <string name="button_upload_default_picture"><u>If you don\'t want to type image address, we can render rnadom image for you!</u></string>
+    <string name="button_upload_default_picture">
+        <u>If you don\'t want to type image address, we can render rnadom image for you!</u>
+    </string>
 
     <string name="success_action">SUCCESS</string>
     <string name="login">LOGIN</string>
     <string name="password">PASSWORD</string>
-    <string name="forgot_password"><u>Forgot your username/password?</u></string>
+    <string name="forgot_password">
+        <u>Forgot your username/password?</u>
+    </string>
 
     <string name="first">First</string>
     <string name="second">Second</string>

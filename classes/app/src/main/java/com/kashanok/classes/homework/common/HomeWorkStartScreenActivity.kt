@@ -48,6 +48,11 @@ class HomeWorkStartScreenActivity : AppCompatActivity() {
         return itemsList
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+    }
+
     private fun getItemDecoration(): ItemOffsetDecoration {
         return ItemOffsetDecoration(
             this,

@@ -9,6 +9,7 @@ import com.kashanok.classes.R
 import com.kashanok.classes.classwork.cw2.Cw2Activity
 import com.kashanok.classes.classwork.cw3.Cw3Activity
 import com.kashanok.classes.classwork.cw4.Cw4Activity
+import com.kashanok.classes.classwork.cw5.Cw5Activity
 import com.kashanok.classes.common.BaseAdapterItem
 import com.kashanok.classes.common.ItemOffsetDecoration
 import com.kashanok.classes.homework.common.workitem.HomeWorkNumber
@@ -69,5 +70,6 @@ class HomeWorkStartScreenActivity : AppCompatActivity() {
         cw2Button.setOnClickListener { startActivity(Cw2Activity.getIntent(this)) }
         cw3Button.setOnClickListener { startActivity(Cw3Activity.getIntent(this)) }
         cw4Button.setOnClickListener { startActivity(Cw4Activity.getIntent(this)) }
+        cw5Button.setOnClickListener { startActivity(Cw5Activity.getIntent(this)) }
     }
 }

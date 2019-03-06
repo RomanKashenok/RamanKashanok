@@ -8,7 +8,6 @@ import com.kashanok.classes.homework.common.workitem.WorkNumber
 import com.kashanok.classes.homework.hw1.ReplacingActivity
 import com.kashanok.classes.homework.hw2.FlagsActivity
 import com.kashanok.classes.homework.hw3.LoadPictureActivity
-import com.kashanok.classes.homework.hw4.Hw4Activity
 
 class HomeworkClickListener(val context: Context) : BaseItemClickListener<BaseAdapterItem<WorkNumber>> {
 
@@ -25,7 +24,7 @@ class HomeworkClickListener(val context: Context) : BaseItemClickListener<BaseAd
                 context.startActivity(LoadPictureActivity.getIntent(context))
             }
             HomeWorkNumber.FOUR -> {
-                context.startActivity(Hw4Activity.getIntent(context))
+//                context.startActivity(Hw4Activity.getIntent(context))
             }
         }
     }

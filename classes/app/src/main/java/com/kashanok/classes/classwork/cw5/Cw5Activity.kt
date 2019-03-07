@@ -10,7 +10,7 @@ import android.support.v4.content.LocalBroadcastManager
 import com.kashanok.classes.R
 import kotlinx.android.synthetic.main.activity_cw5.*
 
-class Cw5Activity: Activity() {
+class Cw5Activity : Activity() {
 
     companion object {
         fun getIntent(context: Context): Intent {

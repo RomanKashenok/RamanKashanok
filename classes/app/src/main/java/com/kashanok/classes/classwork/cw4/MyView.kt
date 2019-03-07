@@ -9,11 +9,8 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 
-class MyView : View {
-
-    constructor(context: Context): super(context)
-
-    constructor(context: Context, attrs: AttributeSet): super(context, attrs)
+class MyView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)
+    : View(context, attrs, defStyleAttr) {
 
     private val paint: Paint = Paint(Paint.ANTI_ALIAS_FLAG)
 

@@ -22,6 +22,8 @@
     <string name="button_upload">ЗАГРУЗИТЬ</string>
     <string name="button_upload_default_picture"><u>Если вы не хотите вводить адрес картинки самостоятельно, мы можем отобразить для вас случайную картинку.</u></string>
 
+    <string name="navigation_owl">Сова</string>
+    <string name="navigation_clock">Часы</string>
 
     <string name="success_action">КРАСАВЧИК ) ВСЕ РАБОТАЕТ</string>
     <string name="login">ИМЯ ПОЛЬЗОВАТЕЛЯ</string>

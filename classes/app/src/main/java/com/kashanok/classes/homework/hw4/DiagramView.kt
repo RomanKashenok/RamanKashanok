@@ -47,7 +47,7 @@ class DiagramView @JvmOverloads constructor(context: Context, attrs: AttributeSe
             it.style = Paint.Style.FILL
             val min = Math.min(width, height)
             val baseMargin = (min / 6).toFloat()
-            val topMargin = (baseMargin * 1.5).toFloat()
+            val topMargin = (baseMargin * 2)
             val endRight = baseMargin + (min - 2 * baseMargin)
             val endBottom = topMargin + (min - 2 * baseMargin)
             val diagramRadius = (endRight - baseMargin) / 2

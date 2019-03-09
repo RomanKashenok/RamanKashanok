@@ -15,7 +15,6 @@ class LoginActivity : AppCompatActivity() {
         signInButton.setOnClickListener {
             startActivity(HomeWorkStartScreenActivity.getIntent(this))
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
-
         }
 
         signUpButton.setOnClickListener {

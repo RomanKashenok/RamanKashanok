@@ -15,7 +15,7 @@
 
     <EditText
             android:id="@+id/diagramValuesView"
-            android:hint="4, 7, 20, 69 (100 in sum)"
+            android:hint="4, 7, 20, 69, 15 ..."
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_42dp"
             app:layout_constraintBottom_toTopOf="@+id/diagramValuesButtonView"

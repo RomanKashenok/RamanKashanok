@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.kashanok.classes.R
+import kotlinx.android.synthetic.main.diagram_drawing_view.view.*
 import kotlinx.android.synthetic.main.owl_blinks_view.view.*
 import kotlin.random.Random
 
@@ -39,6 +40,7 @@ class Hw4PagerAdapter(val context: Context) : PagerAdapter() {
             }
             DIAGRAM_VIEW -> {
                 page = inflater.inflate(R.layout.diagram_drawing_view, collection, false)
+                setupDiagramDataEnter(page)
             }
             else -> throw IllegalArgumentException()
         }
@@ -81,6 +83,13 @@ class Hw4PagerAdapter(val context: Context) : PagerAdapter() {
 
         layout.owlSelector.setOnClickListener {
             layout.owlSelector.isActivated = !layout.owlSelector.isActivated
+        }
+    }
+
+    private fun setupDiagramDataEnter(layout: View) {
+        layout.diagramValuesButtonView.setOnClickListener {
+            val data = layout.diagramValuesView.text.toString()
+            layout.diagramView.setNewData(data)
         }
     }
 }

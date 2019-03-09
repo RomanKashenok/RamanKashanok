@@ -7,9 +7,8 @@ import android.util.TypedValue
 import android.view.View
 import java.util.* // ktlint-disable no-wildcard-imports
 
-class ClockView : View {
-    constructor(context: Context) : super(context)
-    constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
+class ClockView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)
+: View(context, attrs, defStyleAttr) {
 
     private var paint: Paint? = null
 
@@ -92,7 +91,7 @@ class ClockView : View {
             val c = Calendar.getInstance()
             drawHand(
                 canvas,
-                (c.get(Calendar.HOUR) + c.get(Calendar.MINUTE) / 60) * 5f.toDouble(),
+                ((c.get(Calendar.HOUR) + c.get(Calendar.MINUTE) / 60) * 5f).toDouble(),
                 ClockHandType.HOUR,
                 it
             )

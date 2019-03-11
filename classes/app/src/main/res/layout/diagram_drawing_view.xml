@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="@dimen/dimen_9dp">
+
+    <com.kashanok.classes.homework.hw4.DiagramView
+            android:id="@+id/diagramView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/diagramValuesView"/>
+
+    <EditText
+            android:id="@+id/diagramValuesView"
+            android:hint="4, 7, 20, 69, 15 ..."
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            app:layout_constraintBottom_toTopOf="@+id/diagramValuesButtonView"
+            tools:layout_editor_absoluteX="9dp"/>
+
+    <Button
+            android:id="@+id/diagramValuesButtonView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="DRAW DIAGRAM"/>
+
+</android.support.constraint.ConstraintLayout>

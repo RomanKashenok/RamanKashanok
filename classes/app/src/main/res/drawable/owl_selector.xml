@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/on"
+            android:state_activated="true">
+        <bitmap
+                android:src="@drawable/sova_anmation_3"/>
+    </item>
+
+    <item
+            android:id="@+id/off"
+            android:state_activated="false">
+        <bitmap
+                android:src="@drawable/sova_anmation_1"/>
+    </item>
+
+</selector>

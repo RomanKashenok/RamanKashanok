@@ -4,6 +4,7 @@
           package="com.kashanok.classes">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
             android:allowBackup="false"
@@ -13,6 +14,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".homework.hw5.Hw5Activity">
+        </activity>
         <activity android:name=".classwork.cw6.Cw6Activity">
         </activity>
         <activity android:name=".classwork.cw5.Cw5Activity">
@@ -54,6 +57,7 @@
         </receiver>
         -->
         <service android:name=".classwork.cw5.MyService"/>
+        <service android:name="com.kashanok.classes.homework.hw5.WifiCheckerService"/>
     </application>
 
 </manifest>

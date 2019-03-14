@@ -1,4 +1,5 @@
 <resources>
+    <!-- NOT translatable fields -->
     <string name="app_name" translatable="false">classes</string>
     <string name="text_1" translatable="false">FIRST</string>
     <string name="text_2" translatable="false">SECOND</string>
@@ -9,6 +10,7 @@
     </string>
     <string name="enter_uri" translatable="false">http://example.com/img.jpg</string>
 
+    <!-- Translatable fields -->
 
     <string name="first_homework">Implement click listeners with 3 approaches to change text fields colors and text
         content.
@@ -21,6 +23,12 @@
     </string>
     <string name="four_homework">1. Create animation between activities 2. Make owl to blink (animation) 3. Draw watches
         with correct time
+    </string>
+    <string name="five_homework">1. Create service with WIFI state check 2.Send from service to activity WIFI state with
+        LocalBroadcastManager
+    </string>
+    <string name="hw5_wifi_state">
+        Actual WIFI State (is enabled):
     </string>
 
     <string name="first_homework_unavailable">Unfortunately this homework was moved to different source :(</string>

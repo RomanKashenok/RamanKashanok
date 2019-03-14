@@ -10,7 +10,7 @@ import android.widget.Toast
 import com.kashanok.classes.R
 import com.kashanok.classes.common.BaseAdapterItem
 import kotlinx.android.synthetic.main.activity_cw6.*
-import java.util.*
+import java.util.* // ktlint-disable no-wildcard-imports
 import kotlin.random.Random
 
 class Cw6Activity : AppCompatActivity() {
@@ -62,5 +62,4 @@ class Cw6Activity : AppCompatActivity() {
             Toast.LENGTH_LONG
         ).show()
     }
-
 }

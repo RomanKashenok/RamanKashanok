@@ -1,0 +1,78 @@
+{
+  "name": "Test file",
+  "gender": 0,
+  "date": "2016-12-18",
+  "people": [
+    {
+      "id": 0,
+      "name": "Ivan",
+      "surname": "Ivanov",
+      "age": 12,
+      "isDegree": true
+    },
+    {
+      "id": 1,
+      "name": "Sergei",
+      "surname": "Petrov",
+      "age": 20,
+      "isDegree": false
+    },
+    {
+      "id": 2,
+      "name": "Alexei",
+      "surname": "Sidorov",
+      "age": 42,
+      "isDegree": true
+    },
+    {
+      "id": 3,
+      "name": "Michael",
+      "surname": "Jackson",
+      "age": 34,
+      "isDegree": true
+    },
+    {
+      "id": 4,
+      "name": "Alex",
+      "surname": "Lukushenko",
+      "age": 235,
+      "isDegree": true
+    },
+    {
+      "id": 5,
+      "name": "Maksim",
+      "surname": "Hsdfkj",
+      "age": 21,
+      "isDegree": true
+    },
+    {
+      "id": 6,
+      "name": "Raman",
+      "surname": "Kashanok",
+      "age": 34,
+      "isDegree": true
+    },
+    {
+      "id": 7,
+      "name": "Jane",
+      "surname": "Elman",
+      "age": 27,
+      "isDegree": true
+    },
+    {
+      "id": 8,
+      "name": "Tatiana",
+      "surname": "Plechishik",
+      "age": 30,
+      "isDegree": true
+    }
+  ,
+    {
+      "id": 9,
+      "name": "Lena",
+      "surname": "Vislous",
+      "age": 52,
+      "isDegree": true
+    }
+  ]
+}

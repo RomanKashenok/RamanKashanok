@@ -30,6 +30,12 @@
     <string name="hw5_wifi_state">
         Actual WIFI State (is enabled):
     </string>
+    <string name="six_homework">Create activity with RecyclerView. Activity should provide edit functionality.</string>
+    <string name="age">Age:</string>
+    <string name="name">Name:</string>
+    <string name="surname">Surname:</string>
+    <string name="degree">Has degree:</string>
+    <string name="alreadyRemoved">This studen had been removed already!</string>
 
     <string name="first_homework_unavailable">Unfortunately this homework was moved to different source :(</string>
     <string name="under_construction">Unfortunately this is under construction :(</string>
@@ -42,6 +48,11 @@
     <string name="button_sign_in">Sign In</string>
     <string name="button_sign_up">Sign Up</string>
     <string name="button_upload">UPLOAD</string>
+    <string name="button_add">ADD</string>
+    <string name="button_edit">EDIT</string>
+    <string name="button_delete">DELETE</string>
+    <string name="button_remove">REMOVE</string>
+    <string name="button_save">SAVE</string>
     <string name="button_upload_default_picture">
         <u>If you don\'t want to type image address, we can render rnadom image for you!</u>
     </string>

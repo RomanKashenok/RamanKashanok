@@ -10,6 +10,7 @@ import com.kashanok.classes.homework.hw2.FlagsActivity
 import com.kashanok.classes.homework.hw3.LoadPictureActivity
 import com.kashanok.classes.homework.hw4.Hw4Activity
 import com.kashanok.classes.homework.hw5.Hw5Activity
+import com.kashanok.classes.homework.hw6.Hw6MainActivity
 
 class HomeworkClickListener(val context: Context) : BaseItemClickListener<BaseAdapterItem<WorkNumber>> {
 
@@ -30,6 +31,9 @@ class HomeworkClickListener(val context: Context) : BaseItemClickListener<BaseAd
             }
             HomeWorkNumber.FIVE -> {
                 context.startActivity(Hw5Activity.getIntent(context))
+            }
+            HomeWorkNumber.SIX -> {
+                context.startActivity(Hw6MainActivity.getIntent(context))
             }
         }
     }

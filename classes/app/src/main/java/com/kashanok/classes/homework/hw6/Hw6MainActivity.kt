@@ -5,10 +5,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import com.kashanok.classes.R
 import com.kashanok.classes.common.ItemOffsetDecoration
 import com.kashanok.classes.homework.hw6.recycler.Hw6RvAdapter
 import kotlinx.android.synthetic.main.activity_hw6.*
+import com.kashanok.classes.R.layout.*
 
 class Hw6MainActivity : AppCompatActivity() {
 
@@ -23,7 +23,7 @@ class Hw6MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hw6)
+        setContentView(activity_hw6)
 
         rvStudents.layoutManager = LinearLayoutManager(this)
 
@@ -43,12 +43,12 @@ class Hw6MainActivity : AppCompatActivity() {
     private fun getItemDecoration(): ItemOffsetDecoration {
         return ItemOffsetDecoration(
             this,
-            R.dimen.dimen_27dp,
-            R.dimen.dimen_9dp,
-            R.dimen.dimen_9dp,
-            R.dimen.dimen_9dp,
-            R.dimen.dimen_0dp,
-            R.dimen.dimen_27dp
+            com.kashanok.classes.R.dimen.dimen_27dp,
+            com.kashanok.classes.R.dimen.dimen_9dp,
+            com.kashanok.classes.R.dimen.dimen_9dp,
+            com.kashanok.classes.R.dimen.dimen_9dp,
+            com.kashanok.classes.R.dimen.dimen_0dp,
+            com.kashanok.classes.R.dimen.dimen_27dp
         )
     }
 }

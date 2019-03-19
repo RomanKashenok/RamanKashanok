@@ -16,7 +16,6 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.kashanok.classes.R
-import com.kashanok.classes.homework.common.Constants
 import kotlinx.android.synthetic.main.activity_hw3.*
 import org.apache.commons.validator.routines.UrlValidator
 
@@ -26,6 +25,8 @@ class LoadPictureActivity : AppCompatActivity() {
         fun getIntent(context: Context): Intent {
             return Intent(context, LoadPictureActivity::class.java)
         }
+        const val RANDOM_PICTURE_REPOSITORY_URL = "https://picsum.photos/300/500/?random"
+        const val URL_PREFIX = "http://"
     }
 
     private var randomPicture: Boolean = false
@@ -48,12 +49,12 @@ class LoadPictureActivity : AppCompatActivity() {
 
             when {
                 randomPicture -> {
-                    loadWithGlide(pictureView, Constants.RANDOM_PICTURE_REPOSITORY_URL)
+                    loadWithGlide(pictureView, RANDOM_PICTURE_REPOSITORY_URL)
                 }
 
                 !imageUri.isNullOrBlank() -> {
-                    if (!imageUri.startsWith(Constants.URL_PREFIX)) {
-                        imageUri = Constants.URL_PREFIX + imageUri
+                    if (!imageUri.startsWith(URL_PREFIX)) {
+                        imageUri = URL_PREFIX + imageUri
                     }
                     if (UrlValidator().isValid(imageUri)) {
                         loadWithGlide(pictureView, imageUri)

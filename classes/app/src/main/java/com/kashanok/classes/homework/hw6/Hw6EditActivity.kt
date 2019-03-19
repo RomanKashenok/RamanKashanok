@@ -7,7 +7,6 @@ import android.widget.ArrayAdapter
 import com.kashanok.classes.R
 import com.kashanok.classes.common.BaseAdapterItem
 import com.kashanok.classes.common.ImageLoader
-import com.kashanok.classes.homework.common.Constants
 import com.kashanok.classes.homework.hw6.StudentsDataPresenter.Companion.students
 import com.kashanok.classes.homework.hw6.recycler.Hw6RvListItem
 import kotlinx.android.synthetic.main.activity_hw6_edit.*
@@ -26,7 +25,7 @@ class Hw6EditActivity : AppCompatActivity() {
         if (isEditMode) {
             initializeWithStudent(intent)
         } else {
-            ImageLoader.loadImage(studentImageView, Constants.RANDOM_PICTURE_REPOSITORY_URL)
+            ImageLoader.loadImage(studentImageView, StudentsDataPresenter.RANDOM_PICTURE_REPOSITORY_URL)
         }
 
         degreeSpinner.adapter =
@@ -60,7 +59,7 @@ class Hw6EditActivity : AppCompatActivity() {
         studentAgeView.transitionName = StudentsDataPresenter.ageTransitionName
         ImageLoader.loadImage(
             studentImageView,
-            (student as Hw6RvListItem).imageUrl ?: Constants.RANDOM_PICTURE_REPOSITORY_URL
+            (student as Hw6RvListItem).imageUrl ?: StudentsDataPresenter.RANDOM_PICTURE_REPOSITORY_URL
         )
         studentNameView.setText(student.model.name)
         studentSurnameView.setText(student.model.surname)

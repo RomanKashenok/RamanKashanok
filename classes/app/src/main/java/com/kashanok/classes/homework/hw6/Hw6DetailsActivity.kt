@@ -5,13 +5,13 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Bundle
-import android.util.Pair
 import android.support.v7.app.AppCompatActivity
+import android.util.Pair
 import android.widget.Toast
 import com.kashanok.classes.R
 import com.kashanok.classes.common.BaseAdapterItem
 import com.kashanok.classes.common.ImageLoader
-import com.kashanok.classes.homework.common.Constants
+import com.kashanok.classes.homework.hw6.StudentsDataPresenter.Companion.RANDOM_PICTURE_REPOSITORY_URL
 import com.kashanok.classes.homework.hw6.StudentsDataPresenter.Companion.students
 import com.kashanok.classes.homework.hw6.recycler.Hw6RvListItem
 import kotlinx.android.synthetic.main.activity_student_details.*
@@ -43,7 +43,7 @@ class Hw6DetailsActivity : AppCompatActivity() {
 
         ImageLoader.loadImage(
             studentImageView,
-            (student as Hw6RvListItem).imageUrl ?: Constants.RANDOM_PICTURE_REPOSITORY_URL
+            (student as Hw6RvListItem).imageUrl ?: RANDOM_PICTURE_REPOSITORY_URL
         )
         studentNameView.text = student.model.name
         studentSurnameView.text = student.model.surname

@@ -4,9 +4,10 @@ import android.content.Context
 import android.os.AsyncTask
 import com.google.gson.Gson
 import com.kashanok.classes.common.BaseAdapterItem
-import com.kashanok.classes.common.DataPicker
 import com.kashanok.classes.homework.hw6.recycler.Hw6RvAdapter
 import com.kashanok.classes.homework.hw6.recycler.Hw6RvListItem
+import com.squareup.okhttp.OkHttpClient
+import com.squareup.okhttp.Request
 
 class StudentsDataPresenter(private val adapter: Hw6RvAdapter?) :
     AsyncTask<Unit, Unit, List<BaseAdapterItem<Student>>>() {
@@ -15,6 +16,8 @@ class StudentsDataPresenter(private val adapter: Hw6RvAdapter?) :
         private const val ASSETS_FILE_NAME = "students.json"
         private const val DATA_URI = "http://kiparo.ru/t/test.json"
         private const val PICTURE_URL = "https://picsum.photos/300/300/?random"
+
+        const val RANDOM_PICTURE_REPOSITORY_URL = "https://picsum.photos/300/500/?random"
 
         const val EXTRA_STUDENT_ID = "com.kashanok.classes.homework.hw6.StudentsDataPresenter.EXTRA_STUDENT_ID"
 
@@ -64,11 +67,11 @@ class StudentsDataPresenter(private val adapter: Hw6RvAdapter?) :
     }
 
     private fun getStudentsFromUrl(): List<BaseAdapterItem<Student>> {
-        return parseStudents(DataPicker.getDataFromUrl(DATA_URI))
+        return parseStudents(getDataFromUrl(DATA_URI))
     }
 
     fun getStudentsFromAssets(context: Context): List<BaseAdapterItem<Student>> {
-        return parseStudents(DataPicker.getDataFromAssets(context, ASSETS_FILE_NAME))
+        return parseStudents(getDataFromAssets(context, ASSETS_FILE_NAME))
     }
 
     private fun parseStudents(json: String): List<BaseAdapterItem<Student>> {
@@ -80,5 +83,22 @@ class StudentsDataPresenter(private val adapter: Hw6RvAdapter?) :
             studentsList.add(item)
         }
         return studentsList
+    }
+
+    private fun getDataFromUrl(url: String): String {
+        val client = OkHttpClient()
+        val request = Request.Builder()
+            .url(url)
+            .build()
+        val response = client.newCall(request).execute()
+        return response.body().string()
+    }
+
+    private fun getDataFromAssets(context: Context, fileName: String): String {
+        val inStr = context.assets.open(fileName)
+        val buffer = ByteArray(inStr.available())
+        inStr.read(buffer)
+        inStr.close()
+        return String(buffer)
     }
 }

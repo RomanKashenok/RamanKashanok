@@ -15,38 +15,22 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".homework.hw6.Hw6EditActivity">
-        </activity>
-        <activity android:name=".homework.hw6.Hw6DetailsActivity">
-        </activity>
-        <activity android:name=".homework.hw6.Hw6MainActivity">
-        </activity>
-        <activity android:name=".homework.hw5.Hw5Activity">
-        </activity>
-        <activity android:name=".classwork.cw6.Cw6Activity">
-        </activity>
-        <activity android:name=".classwork.cw5.Cw5Activity">
-        </activity>
-        <activity android:name=".homework.hw4.Hw4Activity">
-        </activity>
-        <activity android:name=".classwork.cw4.Cw4Activity">
-        </activity>
-        <activity android:name=".homework.hw3.LoadPictureActivity">
-        </activity>
-        <activity android:name=".homework.hw1.ReplacingActivity">
-        </activity>
-        <activity android:name=".homework.hw2.FlagsActivity">
-        </activity>
-        <activity android:name=".homework.common.HomeWorkStartScreenActivity">
-        </activity>
-        <activity android:name=".classwork.cw3.Cw3Activity">
-        </activity>
-        <activity android:name=".classwork.cw2.ShowIconActivity">
-        </activity>
-        <activity android:name=".classwork.cw2.ToGoToActivity">
-        </activity>
-        <activity android:name=".classwork.cw2.Cw2Activity">
-        </activity>
+        <activity android:name=".homework.hw6.Hw6EditActivity" />
+        <activity android:name=".homework.hw6.Hw6DetailsActivity" />
+        <activity android:name=".homework.hw6.Hw6MainActivity" />
+        <activity android:name=".homework.hw5.Hw5Activity" />
+        <activity android:name=".classwork.cw6.Cw6Activity" />
+        <activity android:name=".classwork.cw5.Cw5Activity" />
+        <activity android:name=".homework.hw4.Hw4Activity" />
+        <activity android:name=".classwork.cw4.Cw4Activity" />
+        <activity android:name=".homework.hw3.LoadPictureActivity" />
+        <activity android:name=".homework.hw1.ReplacingActivity" />
+        <activity android:name=".homework.hw2.FlagsActivity" />
+        <activity android:name=".homework.common.HomeWorkStartScreenActivity" />
+        <activity android:name=".classwork.cw3.Cw3Activity" />
+        <activity android:name=".classwork.cw2.ShowIconActivity" />
+        <activity android:name=".classwork.cw2.ToGoToActivity" />
+        <activity android:name=".classwork.cw2.Cw2Activity" />
         <activity
                 android:name=".classwork.cw2.LoginActivity"
                 android:theme="@style/LoginBackground">

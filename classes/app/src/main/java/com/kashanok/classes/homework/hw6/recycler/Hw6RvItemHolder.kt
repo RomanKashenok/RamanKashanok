@@ -4,9 +4,9 @@ import android.support.v7.widget.RecyclerView
 import android.view.View
 import com.kashanok.classes.common.BaseAdapterItem
 import com.kashanok.classes.common.ImageLoader
-import com.kashanok.classes.homework.common.Constants
 import com.kashanok.classes.homework.hw6.Student
 import com.kashanok.classes.homework.hw6.StudentsDataPresenter
+import com.kashanok.classes.homework.hw6.StudentsDataPresenter.Companion.RANDOM_PICTURE_REPOSITORY_URL
 import kotlinx.android.synthetic.main.student_card.view.*
 
 class Hw6RvItemHolder(val view: View) : RecyclerView.ViewHolder(view) {
@@ -16,7 +16,7 @@ class Hw6RvItemHolder(val view: View) : RecyclerView.ViewHolder(view) {
         view.surnameTextView.text = student.model.surname
         view.ageNumber.text = student.model.age.toString()
         view.isDegreeNumber.text = student.model.isDegree.toString()
-        ImageLoader.loadImage(view.studentImageView, (student as Hw6RvListItem).imageUrl ?: Constants.RANDOM_PICTURE_REPOSITORY_URL)
+        ImageLoader.loadImage(view.studentImageView, (student as Hw6RvListItem).imageUrl ?: RANDOM_PICTURE_REPOSITORY_URL)
 
         setViewsTransitionNames()
     }

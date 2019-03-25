@@ -31,6 +31,7 @@
         Actual WIFI State (is enabled):
     </string>
     <string name="six_homework">Create activity with RecyclerView. Activity should provide edit functionality.</string>
+    <string name="seven_homework">Create activity with RecyclerView. Fragments should contain edit-add functionality.</string>
     <string name="age">Age:</string>
     <string name="name">Name:</string>
     <string name="surname">Surname:</string>

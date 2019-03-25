@@ -6,8 +6,8 @@ import com.google.gson.Gson
 import com.kashanok.classes.common.BaseAdapterItem
 import com.kashanok.classes.homework.hw6.recycler.Hw6RvAdapter
 import com.kashanok.classes.homework.hw6.recycler.Hw6RvListItem
-import com.squareup.okhttp.OkHttpClient
-import com.squareup.okhttp.Request
+import okhttp3.OkHttpClient
+import okhttp3.Request
 
 class StudentsDataPresenter(private val adapter: Hw6RvAdapter?) :
     AsyncTask<Unit, Unit, List<BaseAdapterItem<Student>>>() {
@@ -91,7 +91,7 @@ class StudentsDataPresenter(private val adapter: Hw6RvAdapter?) :
             .url(url)
             .build()
         val response = client.newCall(request).execute()
-        return response.body().string()
+        return response.body()?.string() ?: ""
     }
 
     private fun getDataFromAssets(context: Context, fileName: String): String {

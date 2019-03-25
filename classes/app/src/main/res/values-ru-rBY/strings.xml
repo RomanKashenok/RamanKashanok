@@ -30,18 +30,19 @@
     <string name="hw5_wifi_state">
         Текущий статус Wifi (включен):
     </string>
+    <string name="six_homework">Создать активити с RecyclerView. Активити должна иметь возможность редактирования данных</string>
+    <string name="seven_homework">Создать активити с RecyclerView. Иземение-добавление должно выполняться с помощью фрагментов</string>
+    <string name="age">Возраст: </string>
+    <string name="name">Имя:</string>
+    <string name="surname">Фамилия:</string>
+    <string name="degree">Имеется степень: </string>
+    <string name="alreadyRemoved">Этот студент уже был удален!</string>
 
     <string name="first_homework_unavailable">К сожалению это задание было перемещено и более недоступно :( </string>
     <string name="under_construction">К сожалению пока недоступно и будет реализовано в ближайшее время :( </string>
 
     <string name="error_invalid_url">Введенный адрес не корректен</string>
     <string name="random_picture_selected">СЛУЧАЙНАЯ КАРТИНКА</string>
-    <string name="six_homework">Создать активити с RecyclerView. Активити должна иметь возможность редактирования данных</string>
-    <string name="age">Возраст: </string>
-    <string name="name">Имя:</string>
-    <string name="surname">Фамилия:</string>
-    <string name="degree">Имеется степень: </string>
-    <string name="alreadyRemoved">Этот студент уже был удален!</string>
 
     <string name="button_back_button">ДАТЬ ЗАДНЮЮ</string>
     <string name="button_show_image">КАРТИНКУ ПОКАЗАТЬ</string>

@@ -8,11 +8,19 @@
         tools:context=".homework.hw6.Hw6MainActivity"
         android:padding="@dimen/dimen_9dp">
 
+    <EditText
+            android:id="@+id/searchStudentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrayLight"
+            style="@style/EditTextField"
+            app:layout_constraintTop_toTopOf="parent"/>
+
     <android.support.v7.widget.RecyclerView
             android:id="@+id/rvStudents"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchStudentEditText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 

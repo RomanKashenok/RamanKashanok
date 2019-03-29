@@ -1,6 +1,5 @@
 package com.kashanok.classes.homework.hw7
 
-import android.content.res.Configuration
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -9,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.kashanok.classes.R
 import com.kashanok.classes.common.ImageLoader
-import com.kashanok.classes.homework.hw7.Hw7MainActivity.Companion.orientation
 import com.kashanok.classes.homework.hw7.recycler.Hw7RvListItem
 import kotlinx.android.synthetic.main.student_details_fragment.view.*
 
@@ -68,7 +66,7 @@ class StudentsDetailsFragment : Fragment() {
         val bundle = Bundle()
         bundle.putInt(CURRENT_STUDENT_ID, studentId ?: -1)
         editFragment.arguments = bundle
-        val fragmentToReplace = if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+        val fragmentToReplace = if (StudentFragmentsOrchestrator.isDualMode) {
             R.id.studentsRightPartFragmentFrame
         } else {
             R.id.studentsListFragmentFrame

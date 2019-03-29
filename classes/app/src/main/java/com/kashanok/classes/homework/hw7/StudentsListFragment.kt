@@ -21,10 +21,6 @@ import kotlinx.android.synthetic.main.students_list_fragment.view.*
 
 class StudentsListFragment : Fragment() {
 
-    companion object {
-        var isDualMode: Boolean = false
-    }
-
     var rvAdapter: Hw7RvAdapter? = null
     private var presenter: StudentsDataPresenter? = null
 

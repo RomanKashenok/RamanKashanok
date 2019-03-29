@@ -1,6 +1,5 @@
 package com.kashanok.classes.homework.hw7
 
-import android.content.res.Configuration
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
@@ -15,9 +14,7 @@ object StudentFragmentsOrchestrator {
         currentFragment = fragment
         val transaction = supportManager?.beginTransaction()
         transaction?.replace(idToReplace, fragment)
-//        if(fragment::class.java != StudentEditFragment::class.java){
-            transaction?.addToBackStack(fragment::class.java.toString())
-//        }
+        transaction?.addToBackStack(fragment::class.java.toString())
         transaction?.commit()
     }
 
@@ -27,7 +24,7 @@ object StudentFragmentsOrchestrator {
         bundle.putInt(StudentsDetailsFragment.CURRENT_STUDENT_ID, id)
         detailsFragment.arguments = bundle
 
-        val fragmentToReplace = if (Hw7MainActivity.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+        val fragmentToReplace = if (isDualMode) {
             R.id.studentsRightPartFragmentFrame
         } else {
             R.id.studentsListFragmentFrame

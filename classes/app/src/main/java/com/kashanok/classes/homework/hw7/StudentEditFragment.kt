@@ -14,19 +14,20 @@ import kotlinx.android.synthetic.main.student_edit_fragment.view.*
 
 class StudentEditFragment : Fragment() {
 
-    private var studentId: Int? = null
+    private var studentId: Int = -1
     private val fragmentId: Int = R.layout.student_edit_fragment
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        studentId = arguments?.getInt(StudentsDetailsFragment.CURRENT_STUDENT_ID)
+        arguments?.let {
+            studentId = it.getInt(StudentsDetailsFragment.CURRENT_STUDENT_ID)
+        }
         return inflater.inflate(fragmentId, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val students = StudentsDataPresenter.students.filter { it.model.id == studentId }
-        if (!students.isNullOrEmpty()) {
-            students[0].let {
+        val student = StudentsDataPresenter.students.find { it.model.id == studentId }
+        student?.let {
                 ImageLoader.loadImage(
                     view.studentImageView,
                     (it as Hw7RvListItem).imageUrl ?: StudentsDataPresenter.RANDOM_PICTURE_REPOSITORY_URL
@@ -35,10 +36,9 @@ class StudentEditFragment : Fragment() {
                 view.studentSurnameView.setText(it.model.surname)
                 view.studentAgeView.setText(it.model.age.toString())
             }
-        }
 
         view.degreeSpinner.adapter =
-            ArrayAdapter<Boolean>(activity, android.R.layout.simple_spinner_dropdown_item, arrayListOf(true, false))
+            ArrayAdapter<Boolean>(context, android.R.layout.simple_spinner_dropdown_item, arrayListOf(true, false))
 
         view.saveButton.setOnClickListener {
             val id  = getStudentId()
@@ -55,7 +55,7 @@ class StudentEditFragment : Fragment() {
             } else {
                 StudentsDataPresenter.addStudent(newStudent)
             }
-            studentId?.let {
+            studentId.let {
                 if (activity?.supportFragmentManager?.backStackEntryCount ?: 0 > 0) {
                     StudentFragmentsOrchestrator.updateStudentsList(activity?.supportFragmentManager)
                     activity?.onBackPressed()

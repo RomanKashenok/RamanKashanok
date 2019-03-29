@@ -16,35 +16,26 @@ class Hw7MainActivity : AppCompatActivity() {
         fun getIntent(context: Context): Intent {
             return Intent(context, Hw7MainActivity::class.java)
         }
-
-        var orientation: Int? = 0
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(activity_hw7)
-        orientation = resources.configuration.orientation
-    }
 
-    override fun onResume() {
-        super.onResume()
         var currentFragment: Fragment = StudentsDetailsFragment()
-        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            StudentFragmentsOrchestrator.isDualMode = true
+        StudentFragmentsOrchestrator.isDualMode = resources.configuration.orientation != Configuration.ORIENTATION_PORTRAIT
+        if (StudentFragmentsOrchestrator.isDualMode) {
             StudentFragmentsOrchestrator.currentFragment?.let {
                 currentFragment = it
             }
             setDefaultFragment(currentFragment)
-        } else {
-            StudentFragmentsOrchestrator.isDualMode = false
         }
         setListFragment()
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
-        orientation = newConfig.orientation
-        StudentFragmentsOrchestrator.isDualMode = orientation == Configuration.ORIENTATION_LANDSCAPE
+        StudentFragmentsOrchestrator.isDualMode = newConfig.orientation != Configuration.ORIENTATION_PORTRAIT
     }
 
     private fun setListFragment() {
